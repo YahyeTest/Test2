@@ -3,6 +3,13 @@ language: python
 python:
  - "3.6"
 
+install:
+ - pip install codecov
+ - pip install coverage
+
 script:
  - python -m unittest discover -v ./ # command to run unit test
+ - coverage run test.py # command to run code coverage
 
+after_success:
+ - codecov --token=fa55efdf-8726-432a-9382-a8952bf6184c # upload coverage report to codecov.io

@@ -13,3 +13,10 @@ script:
 
 after_success:
  - codecov --token=fa55efdf-8726-432a-9382-a8952bf6184c # upload coverage report to codecov.io
+deploy:
+ provider: s3
+ access_key_id: $AWS_AccessKey_Id
+ secret_access_key: $AWS_SecretKey
+ bucket: yahye
+ local-dir: s3_play/
+ region: us-east-1

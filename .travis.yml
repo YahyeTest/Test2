@@ -18,5 +18,5 @@ deploy:
  access_key_id: $AWS_AccessKey_Id
  secret_access_key: $AWS_SecretKey
  bucket: yahye
- local-dir: s3_play/
+ local-dir: s3_play/html_files
  region: us-east-1

@@ -20,3 +20,4 @@ deploy:
  bucket: yahye
  local-dir: s3_play/html_files
  region: us-east-1
+ skip_cleanup: true
